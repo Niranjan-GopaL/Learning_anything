@@ -1,3 +1,5 @@
-﻿^j::
-Send, My First Script
+﻿^m::
+{
+    MsgBox "lol"
+}
 return
