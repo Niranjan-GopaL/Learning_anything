@@ -1,0 +1,24 @@
+div{
+    padding: 10px;
+    padding-left: 300px;
+    
+    /* border: 10px; ONLY WRITING THIS DOES NOTHING, IT NEEDS TO BE SOLID */
+    border: 1000px solid;
+}
+
+
+
+/*
+
+-->> Border thickness increases inwards (at the expense of padding)
+-->> If we increase paddings the entire div can expand along with the margin
+-->>
+*/
+
+
+h1{
+    /* background-color: black; */
+    border: 1px solid black;
+    margin: 100px;
+    padding: 210px;
+}
