@@ -1,16 +1,10 @@
-
+// Cryptographic RNG
 import crypto from 'crypto';
 
 // [ min, max )
-export const  getRandomNumberInRange = (min, max) => {
-    const range = max - min + 1;
-    const randomBytes = crypto.randomBytes(4); // 4 bytes = 32 bits
-    const randomValue = randomBytes.readUInt32LE(0); // Convert bytes to a 32-bit integer
-
+export const  get_random_number_in_range = (min, max) => {
+    const range = max - min + 1n;
+    const randomBytes = crypto.randomBytes(4); 
+    const randomValue = BigInt(randomBytes.readUInt32LE(0)); 
     return min + (randomValue % range);
 }
-
-
-
-
-
