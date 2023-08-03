@@ -45,5 +45,4 @@ def gen_prime(bits):
             return a
             
 if __name__ == "__main__":
-    p = gen_prime(2048)
-    print(p)
+    print(miller_rabin(5811223068218817380677271643908200031029))
