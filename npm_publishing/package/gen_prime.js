@@ -1,6 +1,7 @@
 import {is_prime} from './is_prime.js'
 import { get_random_number_in_range } from './cryptographic_randrange.js';
 
+// small_primes
 const small_primes = [
     2n,
     3n,
@@ -57,7 +58,6 @@ const get_random_odd_number = (d) => {
     let randomBigInt;
     
     while (1){
-
         randomBigInt = BigInt(get_random_number_in_range(min, max));
         for(const prime of small_primes){
             if(randomBigInt % prime === 0n){
