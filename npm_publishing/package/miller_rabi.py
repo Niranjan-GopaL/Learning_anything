@@ -5,8 +5,13 @@ import time
 
 def single_test(n, a):
     exp = n - 1
-    while not exp & 1:
-        exp >>= 1
+
+    # a & 1 
+    #    -> is 0 ==> a is even
+    #    -> is 1 ==> a is odd
+    while not (exp &  1):
+        # right shifting == // 2
+        exp >>= 1  
         
     if pow(a, exp, n) == 1:
         return True
@@ -14,10 +19,12 @@ def single_test(n, a):
     while exp < n - 1:
         if pow(a, exp, n) == n - 1:
             return True
-            
+        # left shifting == * 2
         exp <<= 1
         
     return False
+
+
     
 def miller_rabin(n, k=40):
     for i in range(k):
