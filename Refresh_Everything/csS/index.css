@@ -1,0 +1,48 @@
+body{
+    margin: 10px;
+}
+
+#container{
+    height: 650px;
+    
+    border: 10px solid black;
+    border-radius: 5;
+}
+
+.item{
+    height: 90px;
+    width: 50px;
+
+    border: 5px solid rgb(50, 52, 185);
+    border-radius: 10px;
+}
+
+/* BASE STYLE IS OVER */
+
+
+#container{
+    display: flex;
+    
+    justify-content: center;
+}
+
+
+.item-1{
+    flex: 1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
