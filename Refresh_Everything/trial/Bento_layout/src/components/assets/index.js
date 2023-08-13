@@ -1,6 +1,6 @@
 
 import rect_1 from "./Rectangle101133-wxpl.png";
-// import rect_2 from "./Rectangle11021-sxrb.png";
+import rect_2 from "./Rectangle11021-sxrb.png";
 import rect_3 from "./Rectangle111133-shzr.png";
 import rect_4 from "./Rectangle121133-qzi7.png";
 import rect_5 from "./Rectangle131133-9vis.png";
@@ -15,7 +15,7 @@ import rect_13 from "./Rectangle91021-yuej.svg";
 
 export default {
   rect_1,
-//   rect_2,
+  rect_2,
   rect_3,
   rect_4,
   rect_5,
